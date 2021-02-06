@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark entry</title>
+</head>
+<body>
+    <center>
+    <h1><u>STUDENT MARKSHEET</u></h1>
+    <form action="/marksheet" method="POST">
+    <fieldset>
+        <legend><b><u>STUDENT INFORMATION</u></b></legend>
+        <table>
+            <tr>
+                <td>Name:</td><td><input type="text" name="sname"></td>
+                <td>Father Name:</td><td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td>Institute Name:</td><td><input type="text" name="iname"></td>
+                <td>Batch:</td><td><input type="text" name="batch"></td>
+            </tr>
+        </table>
+    </fieldset><br><br>
+    </center>
+    <fieldset>
+        <legend><b><u>SUBJECT MARKS</u></b></legend>
+        <table>
+            <tr>
+                <td>Office Automation:</td>
+                <td><input type="number" name="oauto"> Out of 100.</td>
+            </tr>
+            <tr>
+                <td>Web Designing:</td>
+                <td><input type="number" name="web"> Out of 100.</td>
+            </tr>
+            <tr>
+                <td>IT:</td>
+                <td><input type="number" name="it"> Out of 100.</td>
+            </tr>
+            <tr>
+                <td>C# Programming:</td>
+                <td><input type="number" name="cprog"> Out of 100.</td>
+            </tr>
+        </table>
+        <div align="right"><button type="submit">SUBMIT</button> <button type="reset">RESET</button></div>
+    </fieldset>
+    </form>
+</body>
+</html>

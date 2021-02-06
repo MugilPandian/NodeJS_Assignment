@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/data" method="POST">
+        <table>
+            <tr>
+                <td align="right">Account Type:</td>
+                <td><input type="radio" name="acc" value="Individual">Individual<br>
+                    <input type="radio" name="acc" value="Entity">Entity</td>
+            </tr>
+            <tr>
+                <td align="right">First Name:</td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td align="right">Middle Name or Initial:</td>
+                <td><input type="text" name="mname"></td>
+            </tr>
+            <tr>
+                <td align="right">Last Name:</td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+            <tr>
+                <td align="right">Suffix:</td>
+                <td><select name="suffix">
+                    <option>--</option>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Miss.</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Taxpayer Identification Number:</td>
+                <td><input type="text" size="5" name="tax1">-<input type="text" size="5" name="tax2">-<input type="text" size="5" name="tax3"></td>
+            </tr>
+            <tr>
+                <td align="right">Date of Birth:</td>
+                <td><input type="text" size="2" name="dob1">-<input type="text" size="2" name="dob2">-<input type="text" size="4" name="dob3"> (MM-DD-YYYY)</td>
+            </tr>
+            <tr>
+                <td align="right">Street Address:</td>
+                <td><input type="text" size="30" name="add1"></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td><input type="text" name="add2" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td><input type="text" name="add3" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right">City:</td>
+                <td><input type="text" size="15" name="city"></td>
+            </tr>
+            <tr>
+                <td align="right">State:</td>
+                <td><select name="state">
+                    <option>--</option>
+                    <option>Tamil Nadu</option>
+                    <option>Kerala</option>
+                    <option>Karnataka</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Zip Code:</td>
+                <td><input type="text" size="4" name="zip1">-<input type="text" size="4" name="zip2"> (Plus Four-Optional)</td>
+            </tr>
+            <tr>
+                <td align="right">Home Phone:</td>
+                <td>(<input type="text" size="2" name="ph1">) <input type="text" size="5" name="ph2">-<input type="text" size="5" name="ph3"></td>
+            </tr>
+            <tr>
+                <td>Driver's License/State ID Number:</td>
+                <td><input type="text" name="driv"></td>
+            </tr>
+            <tr>
+                <td align="right">Issuing State:</td>
+                <td><select name="istate">
+                    <option>--</option>
+                    <option>Tamil Nadu</option>
+                    <option>Kerala</option>
+                    <option>Karnataka</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Expiration Date:</td>
+                <td><input type="text" size="2" name="ed1">-<input type="text" size="2" name="ed2">-<input type="text" size="4" name="ed3"> (MM-DD-YYYY)</td>
+            </tr>
+            <tr>
+                <td align="right"><button type="submit">Submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
